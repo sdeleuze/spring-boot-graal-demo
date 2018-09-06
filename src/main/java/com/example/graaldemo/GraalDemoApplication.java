@@ -27,7 +27,6 @@ public class GraalDemoApplication {
 		};
 		application.setWebApplicationType(WebApplicationType.REACTIVE);
 		application.setApplicationContextClass(ReactiveWebServerApplicationContext.class);
-		application.setMainApplicationClass(GraalDemoApplication.class);
 
 		// Only functional registration is supported by now because of https://github.com/oracle/graal/issues/630
 		application.addInitializers((GenericApplicationContext context) -> {
